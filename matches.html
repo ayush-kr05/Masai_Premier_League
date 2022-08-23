@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="common.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matches</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar">
+      <h1><a href="index.html">Home</a></h1>
+      <h1><a href="./matches.html">Matches</a></h1>
+      <h1><a href="./favourites.html">Favourites</a></h1>
+    </div>
+
+    <select id="filterVenue" onchange="FindVenues()">
+      <option value="none">Filter by venue</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Banglore">Banglore</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Pune">Pune</option>
+    </select>
+    <h1 class="heading">Match Schedule</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Match Number</th>
+          <th>Team A</th>
+          <th>Team B</th>
+          <th>Date</th>
+          <th>Venue</th>
+          <th>Favourite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- All the matches gets appended here  -->
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<script src="matches.js"></script>
